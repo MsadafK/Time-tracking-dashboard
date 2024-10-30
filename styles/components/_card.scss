@@ -1,0 +1,102 @@
+.main {
+  margin: 1rem;
+}
+.main__card {
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid map-get($colors, "veryDarkBlue");
+  margin: 1rem 0;
+
+  &__icon-box {
+    border-radius: 20px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+    &__icon {
+      margin-left: 12rem;
+    }
+  }
+
+  &__description-box {
+    background-color: map-get($colors, "darkBlue");
+    border-radius: 17px;
+    color: map-get($colors, "white");
+    margin-top: 3rem;
+    padding: 0.75rem;
+    padding-bottom: 0;
+
+    &__event-div,
+    &__time-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__event-div {
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    &__time-div {
+      p {
+        font-size: 2.25rem;
+        font-weight: 300;
+      }
+
+      span {
+        color: map-get($colors, "paleBlue");
+        font-size: map-get($font-sizes, "xsmall");
+      }
+    }
+  }
+}
+
+.main {
+  .main__card:nth-child(3) {
+    background-color: map-get($colors, "lightRed");
+  }
+
+  .main__card:nth-child(4) {
+    background-color: map-get($colors, "softBlue");
+  }
+
+  .main__card:nth-child(5) {
+    background-color: map-get($colors, "pinkishRed");
+  }
+
+  .main__card:nth-child(6) {
+    background-color: map-get($colors, "limeGreen");
+  }
+
+  .main__card:nth-child(7) {
+    background-color: map-get($colors, "purpleLight");
+  }
+
+  .main__card:nth-child(8) {
+    background-color: map-get($colors, "softOrange");
+  }
+}
+
+// Media Queries
+@include respond-to("small") {
+  .main {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  .main__card {
+    &__description-box {
+      padding: 1rem;
+      padding-bottom: 0;
+    }
+
+    &__icon-box {
+      &__icon {
+        margin-left: 15.25rem;
+      }
+    }
+  }
+}

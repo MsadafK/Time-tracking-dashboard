@@ -1,0 +1,47 @@
+// Colors
+$colors: (
+  "blueLight": #5847eb,
+  "lightRed": hsl(15, 100%, 70%),
+  "softBlue": hsl(195, 74%, 62%),
+  "pinkishRed": hsl(348, 100%, 68%),
+  "limeGreen": hsl(145, 58%, 55%),
+  "purpleLight": hsl(264, 64%, 52%),
+  "softOrange": hsl(43, 84%, 65%),
+  "veryDarkBlue": hsl(226, 43%, 10%),
+  "darkBlue": hsl(235, 46%, 20%),
+  "desaturatedBlue": hsl(235, 45%, 61%),
+  "paleBlue": hsl(236, 100%, 87%),
+  "white": hsl(0, 0%, 100%),
+);
+
+// Breakpoints
+$breakpoints: (
+  "xsmall": 320px,
+  "small": 375px,
+  "msmall": 425px,
+  "medium": 768px,
+  "large": 1024px,
+  "xlarge": 1440px,
+);
+
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+$font-family-primary: "Epilogue", sans-serif;
+$font-family-secondary: "Rubik", sans-serif;
+$font-sizes: (
+  "xxsmall": 0.65rem,
+  "xsmall": 0.75rem,
+  "small": 0.85rem,
+  "medium": 1rem,
+  "large": 1.25rem,
+  "xlarge": 1.5rem,
+);
+
+// Spacing
+$spacing: (
+  "xs": 0.25rem,
+  "sm": 0.5rem,
+  "md": 1rem,
+  "lg": 1.5rem,
+  "xl": 2rem,
+);
