@@ -14,10 +14,10 @@
   </head>
   <body>
     <!-- main -->
-    <main class="main" role="main">
+    <main class="main">
       <h1>Time tracking dashboard</h1>
       <!-- header -->
-      <header class="header" role="banner">
+      <header class="header">
         <div class="header__card">
           <div class="header__card__about-div">
             <img
@@ -30,16 +30,12 @@
               <h2>Jeremy Robson</h2>
             </div>
           </div>
-          <nav
-            class="header__card__timeline-div"
-            aria-label="Timeframe selection"
-          >
-            <a class="link" href="#" aria-selected="false">Daily</a>
-            <a class="link" href="#" data-default aria-selected="true"
-              >Weekly</a
-            >
-            <a class="link" href="#" aria-selected="false">Monthly</a>
-          </nav>
+          <nav class="header__card__timeline-div" role="tablist" aria-label="Timeframe selection">
+  <a class="link" href="#" role="tab" aria-selected="false">Daily</a>
+  <a class="link" href="#" role="tab" aria-selected="true" data-default>Weekly</a>
+  <a class="link" href="#" role="tab" aria-selected="false">Monthly</a>
+</nav>
+
         </div>
       </header>
 
